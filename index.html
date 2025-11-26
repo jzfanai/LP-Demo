@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Luxe Horizon | Premium Living</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script>
       tailwind.config = {
         theme: {
@@ -16,17 +16,21 @@
             },
             colors: {
               brand: {
-                50: '#fdf4ff',
-                100: '#fae8ff',
-                200: '#f5d0fe',
-                300: '#f0abfc',
-                400: '#e879f9',
-                500: '#d946ef',
-                600: '#c026d3',
-                700: '#a21caf',
-                800: '#86198f',
-                900: '#701a75',
+                50: '#F9F4F9',
+                100: '#F4E6F4',
+                200: '#E8CCE8',
+                300: '#D6A6D6',
+                400: '#C07ABF',
+                500: '#A956A7', 
+                600: '#8C3D8A',
+                700: '#732F70',
+                800: '#5E265C',
+                900: '#4D1F4B', 
               }
+            },
+            animation: {
+              'spin-slow': 'spin 12s linear infinite',
+              'bounce-slow': 'bounce 3s infinite',
             }
           }
         }
@@ -38,14 +42,22 @@
         width: 8px;
       }
       ::-webkit-scrollbar-track {
-        background: #fdf4ff;
+        background: #F9F4F9;
       }
       ::-webkit-scrollbar-thumb {
-        background: #a21caf;
+        background: #A956A7;
         border-radius: 4px;
       }
       html {
         scroll-behavior: smooth;
+      }
+      .text-outline {
+        -webkit-text-stroke: 1px rgba(0,0,0,0.1);
+        color: transparent;
+      }
+      .text-outline-white {
+        -webkit-text-stroke: 1px rgba(255,255,255,0.3);
+        color: transparent;
       }
     </style>
   <script type="importmap">
